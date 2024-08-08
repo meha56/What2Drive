@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap'); 
+html{
+    font-family: 'Montserrat', sans-serif !important;
+  }
+.topnav {
+    background-color: rgba(235, 244, 241, 1);
+    opacity: 1;
+    color: #282422;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    flex-wrap: wrap;
+  }
+  .topnav a {
+    /* float: left; */
+    text-align: center;
+    /* padding: 14px 115px; */
+    color: #282422;
+    text-decoration: none;
+    font-size: 25px;
+    display: block;
+    padding: 10px;
+    /* border: #282422 2px solid; */
+    /* border-radius: 7px; */
+  }
+  .topnav a:hover {
+    background-color: rgb(50, 53, 59);
+    color: #ddd;
+  }
+  body {
+    /*font-family: "Open Sans", sans-serif;*/
+    font-family: 'Montserrat', sans-serif;
+    overflow: scroll;
+    background-color: rgba(50,89,114, 1);
+    padding: 0;
+    margin: 0;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    border: none;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #282422;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+    /* border-radius: 7px; */
+    z-index: 10;
+  }
+  .dropdown {
+    float: left;
+    overflow: hidden;
+    /* border-radius: 7px; */
+  }
+  
+  .dropdown .dropbtn {
+    border: none;
+    outline: none;
+    color: white;
+    padding: 10px;
+    background-color: inherit;
+   /* font-family: inherit;*/
+    margin: 0;
+    text-align: center;
+    color: #282422;
+    text-decoration: none;
+    font-size: 25px;
+    /* border: #282422 2px solid; */
+    /* border-radius: 7px; */
+    font-family: 'Montserrat', sans-serif;
+  }
+  .dropdown .dropbtn:hover {
+    background-color: rgb(50, 53, 59);
+    color: #ddd;
+  }
+  .topnav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+  }
+
+/*@media (max-width: 800px) {
+  .topnav {
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    display: contents;
+  }
+}*/
+.opener {
+  padding-top: 100px; /* Add padding to account for the fixed navbar height */
+}
+/* Existing styles for Mac (larger screens) will remain unchanged */
+
+/* Media Query for 375px screens */
+@media screen and (max-width: 375px) {
+  .topnav ul {
+    flex-direction: column; /* Stack the items vertically */
+    padding: 0; /* Adjust padding to better fit the smaller screen */
+  }
+
+  .topnav li {
+    width: 100%; /* Make each list item take up the full width */
+  }
+
+  .topnav ul:first-of-type {
+    flex-direction: row; /* Row layout for the first line */
+    justify-content: space-between; /* Evenly distribute the items */
+  }
+
+  .topnav ul:first-of-type + ul {
+    flex-direction: row; /* Row layout for the second line */
+    justify-content: space-between; /* Evenly distribute the items */
+    margin-top: 5px; /* Add a bit of space between the two lines */
+  }
+
+  .dropdown {
+    width: 48%; /* Adjust dropdown width to fit within the line */
+    text-align: center; /* Center align text */
+  }
+
+  .topnav a {
+    padding: 10px 0; /* Reduce padding to fit content better */
+    font-size: 20px; /* Adjust font size */
+  }
+
+  .dropdown .dropbtn {
+    font-size: 20px; /* Adjust font size for dropdown button */
+  }
+  .opener {
+    padding-top: 120px; /* Adjust padding for smaller screens if needed */
+  }
+
+}

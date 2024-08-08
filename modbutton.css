@@ -1,0 +1,15 @@
+#modbutton {
+    position: fixed;
+    right: 0;
+    bottom: 600px;
+    display: block;
+    background-color: #2f3542;
+    width: 100px;
+    height: 50px;
+    border: black;
+    color: #edf1f1 !important; 
+  }
+  #modbutton:hover {
+    background-color: black;
+    color: grey;
+  }

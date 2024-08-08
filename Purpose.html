@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../navbar.css" />
+    <link rel="stylesheet" type="text/css" href="../PersonalityTest/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair:wght@600&display=swap" rel="stylesheet">
+<!--animated text font link-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">
+<!--Section headings h2 font link-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+   <!--open sans link--> <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet"><!--till here-->
+    <title>Personality Test</title>
+</head>
+<body>
+    <div class="container">
+        <nav class="topnav">
+            <ul>
+              <li><a class="active" href="../index.html">Home</a></li>
+              <li>
+                <div class="dropdown">
+                  <button class="dropbtn">
+                    Brands + Models <i class="fa fa-caret-down"></i>
+                  </button>
+                  <div class="dropdown-content">
+                    <a href="../Mazda/Mazda.html">Mazda</a>
+                    <a href="#Mercedes-Benz">Mercedes-Benz</a>
+                    <a href="../Toyota/index.html">Toyota</a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="dropdown">
+                    <button class="dropbtn">
+                      Calculators <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="../FuelConsumptionCalc/index.html">Fuel Consumption Calculator</a>
+                      <a href="../FuelEfficiencyCalc/index.html">Fuel Efficiency Calculator</a>
+                      <a href="#Toy">Car Loan Calculator</a>
+                    </div>
+                  </div></li>
+              <li><a href="../PersonalityTest/index.html">Test</a></li>
+            </ul>
+          </nav>
+          <div class="test">
+    <h2 class="test-begin">Which model is for you?</h2>
+    <br><br>
+    <h3 class="test-details">Answer the questions too find out which of the models would be the best fit for you?</h3>
+    <section class="questions" id="purpose">
+    <h3 class="question">What would the purpose of the car be?</h3>
+        <div class="choices">
+            <div class="option" data-value="1">For convenience (e.g. to go and come from work)</div>
+            <div class="option" data-value="2">For long drives and comfort</div>
+            <div class="option" data-value="3">To have a flashy car for fun</div>
+        </div>
+        <div class="button-holder">&nbsp;</div>
+    </section>
+    <section class="questions" id="brand">
+        <h3 class="question">Choose a brand:</h3>
+        <div class="choices">
+            <div class="option" data-value="6">Mazda</div>
+            <div class="option" data-value="7">Mercedes-Benz</div>
+            <div class="option" data-value="8">Toyota</div>
+        </div>
+        <div class="button-holder">&nbsp;</div>
+    </section>
+    </div><!--end of quiz section-->
+    <!--<div class="button-finish">What model is for me?</div> !-->
+    <div class="response"><p></p></div>
+    </div><!--end of container-->
+</body>
+<script src="main.js"></script>
+</html>
